@@ -27,7 +27,7 @@ class Pool(object):
     def _pool_runner(self,queue):
         while self.running:
             f = queue.get()
-            f();
+            f()
         
     def spawn(self,call_method, *k, **kk):
         f = functools.partial(call_method, *k, **kk)

@@ -25,7 +25,7 @@ try:
 
     class YKDLParser(yougetparser.YouGetParser):
 
-        bin = './ykdl/ykdl.py'
+        bin = './ykdl/bin/ykdl.py'
 
 
         # make arg

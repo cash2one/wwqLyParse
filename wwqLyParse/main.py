@@ -2,6 +2,10 @@
 # -*- coding: utf-8 -*-
 # author wwqgtxx <wwqgtxx@gmail.com>
 
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 try:
     from .common import *
 except Exception as e:
@@ -30,7 +34,7 @@ app = Flask(__name__)
 version = {
     'port_version' : "0.5.0", 
     'type' : 'parse', 
-    'version' : '0.6.2',
+    'version' : '0.7.0',
     'uuid' : '{C35B9DFC-559F-49E2-B80B-79B66EC77471}',
     'filter' : [],
     'name' : 'WWQ猎影解析插件', 

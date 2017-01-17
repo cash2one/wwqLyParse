@@ -4,11 +4,13 @@
 
 import pyquery
 
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 try:
     from .lib import bridge
 except Exception as e:
     from lib import bridge
-import sys
 sys.path.insert(0, bridge.pn(bridge.pjoin(bridge.get_root_path(), './lib/flask_lib')))
 try:
     from flask import Flask,request
